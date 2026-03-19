@@ -833,22 +833,24 @@
   .mobile-nav {
     display: none;
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 56px; right: 0;
+    width: 50%;
     background: rgba(10,10,10,0.98);
-    border-bottom: 1px solid rgba(200,16,46,0.3);
-    padding: 70px 32px 28px;
+    border: 1px solid rgba(200,16,46,0.3);
+    border-right: none;
+    padding: 16px 0 16px;
     z-index: 150;
     flex-direction: column;
     gap: 0;
   }
   .mobile-nav.open { display: flex; }
-  .mobile-nav a {
+  .mobile-nav a, .mobile-nav span {
     font-family: var(--font-display);
-    font-size: 22px;
+    font-size: 16px !important;
     letter-spacing: 2px;
     color: var(--white);
     text-decoration: none;
-    padding: 10px 0;
+    padding: 8px 20px !important;
     border-bottom: 1px solid rgba(255,255,255,0.06);
     transition: color 0.15s;
   }
