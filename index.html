@@ -139,7 +139,7 @@
   .dropdown-menu {
     display: none;
     position: absolute;
-    top: calc(100% + 12px);
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(10,10,10,0.97);
@@ -147,6 +147,7 @@
     min-width: 200px;
     flex-direction: column;
     z-index: 300;
+    padding-top: 12px;
   }
   .nav-dropdown:hover .dropdown-menu { display: flex; }
   .dropdown-menu a {
