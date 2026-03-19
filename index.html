@@ -129,6 +129,33 @@
   }
   .nav-links a:hover { color: var(--white); }
 
+  /* ── DROPDOWN ── */
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > a::after {
+    content: ' ▾';
+    font-size: 9px;
+    vertical-align: middle;
+  }
+  .nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(10,10,10,0.97);
+    border: 1px solid rgba(200,16,46,0.25);
+    min-width: 180px;
+    flex-direction: column;
+    z-index: 300;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu { display: flex; }
+  .nav-dropdown-menu a {
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    white-space: nowrap;
+  }
+  .nav-dropdown-menu a:last-child { border-bottom: none; }
+
 
   .nav-tagline {
     font-family: var(--font-display);
@@ -799,6 +826,21 @@
   }
   .mobile-nav a:last-child { border-bottom: none; }
   .mobile-nav a:hover { color: var(--red); }
+  .mobile-nav-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red);
+    padding: 10px 0 4px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: block;
+  }
+  .mobile-nav-sub {
+    font-size: 18px !important;
+    padding-left: 14px !important;
+    color: rgba(255,255,255,0.7) !important;
+  }
 
   /* ── MOBILE ── */
   @media (max-width: 768px) {
@@ -838,7 +880,13 @@
     <li><a href="#services">Services</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="https://hypertrophy.brusovcoach.org" target="_blank" rel="noopener noreferrer">Training Hub</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Training Hub</a>
+      <div class="nav-dropdown-menu">
+        <a href="https://hypertrophy.brusovcoach.org" target="_blank" rel="noopener noreferrer">Hypertrophy</a>
+        <a href="#">Health &amp; Longevity</a>
+      </div>
+    </li>
 
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
@@ -853,7 +901,9 @@
   <a href="#services">Services</a>
   <a href="#reviews">Reviews</a>
   <a href="#contact">Contact</a>
-  <a href="https://hypertrophy.brusovcoach.org" target="_blank" rel="noopener noreferrer">Training Hub</a>
+  <span class="mobile-nav-label">Training Hub</span>
+  <a href="https://hypertrophy.brusovcoach.org" target="_blank" rel="noopener noreferrer" class="mobile-nav-sub">Hypertrophy</a>
+  <a href="#" class="mobile-nav-sub">Health &amp; Longevity</a>
 </div>
 
 <!-- HERO -->
