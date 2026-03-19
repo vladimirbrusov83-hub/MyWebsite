@@ -129,6 +129,40 @@
   }
   .nav-links a:hover { color: var(--white); }
 
+  /* ── DROPDOWN ── */
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > a::after {
+    content: ' ▾';
+    font-size: 9px;
+    opacity: 0.6;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(10,10,10,0.97);
+    border: 1px solid rgba(200,16,46,0.25);
+    min-width: 200px;
+    flex-direction: column;
+    z-index: 300;
+  }
+  .nav-dropdown:hover .dropdown-menu { display: flex; }
+  .dropdown-menu a {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    transition: color 0.2s, background 0.2s;
+    white-space: nowrap;
+  }
+  .dropdown-menu a:last-child { border-bottom: none; }
+  .dropdown-menu a:hover { color: var(--white); background: rgba(200,16,46,0.08); }
 
   .nav-tagline {
     font-family: var(--font-display);
@@ -860,8 +894,13 @@
     <li><a href="#services">Services</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="https://hypertrophy.brusovcoach.org" target="_blank" rel="noopener noreferrer">Training Hub</a></li>
-
+    <li class="nav-dropdown">
+      <a href="#">Training Hub</a>
+      <div class="dropdown-menu">
+        <a href="https://hypertrophy.brusovcoach.org" target="_blank" rel="noopener noreferrer">Hypertrophy</a>
+        <a href="#">Health &amp; Longevity</a>
+      </div>
+    </li>
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -875,7 +914,9 @@
   <a href="#services">Services</a>
   <a href="#reviews">Reviews</a>
   <a href="#contact">Contact</a>
-  <a href="https://hypertrophy.brusovcoach.org" target="_blank" rel="noopener noreferrer">Training Hub</a>
+  <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--red);padding:10px 0 4px;border-bottom:1px solid rgba(255,255,255,0.06);">Training Hub</span>
+  <a href="https://hypertrophy.brusovcoach.org" target="_blank" rel="noopener noreferrer" style="padding-left:16px;font-size:18px;">Hypertrophy</a>
+  <a href="#" style="padding-left:16px;font-size:18px;">Health &amp; Longevity</a>
 </div>
 
 <!-- HERO -->
