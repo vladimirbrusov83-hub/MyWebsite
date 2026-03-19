@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vladimir Brusov — Soviet-trained strength coach in St. Louis, MO. 26 years of training, 20 years coaching. Powerlifting, bodybuilding, tactical prep. In-person & online coaching.">
+<meta name="keywords" content="strength coach St. Louis, powerlifting coach St. Louis, bodybuilding coach St. Louis, online strength coach, Vladimir Brusov">
+<title>Vladimir Brusov | Strength Coach — St. Louis, MO</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  "name": "Vladimir Brusov — Strength Coach",
+  "description": "Soviet-trained strength and conditioning coach in St. Louis, MO. Specializing in powerlifting, bodybuilding, and tactical/military fitness prep. In-person and online coaching.",
+  "telephone": "(314) 527-1067",
+  "email": "vladimirbrusov83@gmail.com",
+  "url": "https://brusovcoach.org",
+  "sameAs": [
+    "https://www.linkedin.com/in/vladimir-brusov-40922a1a7/",
+    "https://www.openpowerlifting.org/u/vladimirbrusov"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3738 Chouteau Ave",
+    "addressLocality": "St. Louis",
+    "addressRegion": "MO",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  }],
+  "areaServed": [
+    {"@type": "City", "name": "St. Louis"},
+    {"@type": "AdministrativeArea", "name": "Missouri"}
+  ],
+  "priceRange": "$$",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Coaching Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "1-on-1 Personal Training", "description": "In-person strength and conditioning coaching at The Lab Gym, St. Louis, MO"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Online Coaching", "description": "Remote strength coaching with fully custom programming, available worldwide"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Powerlifting Meet Prep", "description": "Competition preparation coached by an active regional powerlifting referee"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Military & Special Forces Selection Prep", "description": "Tactical fitness preparation for military and special forces candidates"}}
+    ]
+  }
+}
+</script>
+<link rel="canonical" href="https://brusovcoach.org">
+<meta name="google-site-verification" content="uZrqCu-VzMeW5DEbikKm-caWQE9A5ExEKlRebQSgXvU">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #C8102E;
+    --red-dark: #8B0A1F;
+    --gold: #C9A84C;
+    --black: #0A0A0A;
+    --dark: #111111;
+    --dark2: #1A1A1A;
+    --dark3: #242424;
+    --gray: #888888;
+    --light: #D4CFC8;
+    --white: #F5F0E8;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'Crimson Pro', serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NOISE TEXTURE OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+    background: linear-gradient(to bottom, rgba(10,10,10,0.95), transparent);
+    transition: background 0.3s;
+  }
+  nav.scrolled { background: rgba(10,10,10,0.97); border-bottom: 1px solid rgba(200,16,46,0.2); }
+
+  .nav-logo {
+    font-family: var(--font-display);
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: var(--white);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--red); }
+
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--white); }
+
+
+  .nav-tagline {
+    font-family: var(--font-display);
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: var(--white);
+  }
+  .nav-tagline em {
+    color: var(--red);
+    font-style: normal;
+  }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 120px 48px 80px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.2s forwards;
+  }
+
+  .hero-name {
+    font-family: var(--font-display);
+    font-size: clamp(72px, 8vw, 120px);
+    line-height: 0.9;
+    letter-spacing: 4px;
+    color: var(--white);
+    opacity: 0;
+    animation: fadeUp 0.8s 0.4s forwards;
+  }
+  .hero-name .last { color: var(--red); display: block; }
+
+  .hero-tagline {
+    margin-top: 32px;
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--light);
+    border-left: 3px solid var(--red);
+    padding-left: 20px;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.6s forwards;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 48px;
+    margin-top: 56px;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.8s forwards;
+  }
+  .stat-item {}
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 48px;
+    line-height: 1;
+    color: var(--gold);
+  }
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--gray);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 16px;
+    margin-top: 48px;
+    opacity: 0;
+    animation: fadeUp 0.8s 1s forwards;
+  }
+
+  .hero-right {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-right::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--black) 0%, transparent 40%);
+    z-index: 1;
+  }
+  .hero-right::after {
+    content: 'IRON';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    font-family: var(--font-display);
+    font-size: 280px;
+    color: rgba(200,16,46,0.07);
+    line-height: 1;
+    z-index: 0;
+    letter-spacing: -10px;
+  }
+  .hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  /* ── RED DIVIDER ── */
+  .divider {
+    height: 4px;
+    background: linear-gradient(to right, var(--red) 0%, var(--red-dark) 60%, transparent 100%);
+  }
+
+  /* ── SECTION BASE ── */
+  section { padding: 100px 0; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(48px, 5vw, 72px);
+    letter-spacing: 3px;
+    line-height: 1;
+    color: var(--white);
+    margin-bottom: 48px;
+  }
+
+  /* ── ABOUT ── */
+  #about { background: var(--dark); }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .about-body {
+    font-size: 19px;
+    color: var(--light);
+    line-height: 1.8;
+  }
+  .about-body p + p { margin-top: 20px; }
+  .about-body strong { color: var(--white); font-weight: 600; }
+
+  .credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid rgba(200,16,46,0.2);
+  }
+  .credential-item {
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    transition: background 0.2s;
+  }
+  .credential-item:last-child { border-bottom: none; }
+  .credential-item:hover { background: rgba(200,16,46,0.05); }
+  .cred-icon {
+    width: 8px;
+    height: 8px;
+    background: var(--red);
+    border-radius: 50%;
+    margin-top: 8px;
+    flex-shrink: 0;
+  }
+  .cred-text {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+    line-height: 1.6;
+  }
+  .cred-text strong { color: var(--gold); font-weight: 500; display: block; margin-bottom: 2px; }
+
+  /* ── PHILOSOPHY ── */
+  #philosophy { background: var(--black); }
+
+  .philosophy-intro {
+    max-width: 700px;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--light);
+    line-height: 1.7;
+    margin-bottom: 64px;
+    border-left: 3px solid var(--gold);
+    padding-left: 24px;
+  }
+
+  .principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: rgba(200,16,46,0.15);
+  }
+  .principle {
+    background: var(--black);
+    padding: 40px 32px;
+    transition: background 0.3s;
+  }
+  .principle:hover { background: var(--dark2); }
+  .principle-num {
+    font-family: var(--font-display);
+    font-size: 64px;
+    color: rgba(200,16,46,0.15);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  .principle-title {
+    font-family: var(--font-display);
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+  .principle-body {
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.7;
+  }
+
+  /* ── SERVICES ── */
+  #services { background: var(--dark); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background: rgba(200,16,46,0.1);
+    margin-bottom: 48px;
+  }
+
+  .service-card {
+    background: var(--dark);
+    padding: 48px 40px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+  }
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px;
+    height: 0;
+    background: var(--red);
+    transition: height 0.4s;
+  }
+  .service-card:hover { background: var(--dark2); }
+  .service-card:hover::before { height: 100%; }
+
+  .service-type {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .service-title {
+    font-family: var(--font-display);
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+  .service-body {
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .service-includes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .service-includes li {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--light);
+    padding-left: 16px;
+    position: relative;
+  }
+  .service-includes li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--red);
+  }
+
+  .consultation-banner {
+    background: var(--red);
+    padding: 32px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .consultation-text {
+    font-family: var(--font-display);
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: var(--white);
+  }
+  .consultation-sub {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 4px;
+  }
+
+  /* ── BUTTONS ── */
+  .btn {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 32px;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-primary {
+    background: var(--red);
+    color: var(--white);
+  }
+  .btn-primary:hover { background: var(--red-dark); }
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  .btn-outline:hover { border-color: var(--white); }
+  .btn-gold {
+    background: var(--gold);
+    color: var(--black);
+  }
+  .btn-gold:hover { background: #b8952f; }
+  .btn-white {
+    background: var(--white);
+    color: var(--black);
+  }
+  .btn-white:hover { background: var(--light); }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--black); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .contact-info {}
+  .contact-intro {
+    font-size: 20px;
+    color: var(--light);
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  .contact-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .contact-item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .contact-item-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--red);
+    text-transform: uppercase;
+    min-width: 80px;
+  }
+  .contact-item-value {
+    font-size: 16px;
+    color: var(--white);
+  }
+  .contact-item-value a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .contact-item-value a:hover { color: var(--gold); }
+
+  .location-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--dark2);
+    border: 1px solid rgba(200,16,46,0.3);
+    padding: 10px 16px;
+    margin-bottom: 32px;
+  }
+  .location-tag span {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--gray);
+  }
+  .location-tag .dot {
+    width: 6px; height: 6px;
+    background: var(--red);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  /* ── CONTACT FORM ── */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid rgba(200,16,46,0.2);
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .form-field {
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    border-right: 1px solid rgba(255,255,255,0.07);
+  }
+  .form-field:last-child, .form-field.full { border-right: none; }
+  .form-field label {
+    position: absolute;
+    top: 16px; left: 20px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--gray);
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: all 0.2s;
+  }
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 36px 20px 16px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--white);
+    resize: none;
+  }
+  .form-field input:focus ~ label,
+  .form-field input:not(:placeholder-shown) ~ label,
+  .form-field select:focus ~ label,
+  .form-field textarea:focus ~ label,
+  .form-field textarea:not(:placeholder-shown) ~ label {
+    top: 10px;
+    font-size: 9px;
+    color: var(--red);
+  }
+  .form-field select option { background: var(--dark); }
+  .form-field.full { grid-column: 1 / -1; border-right: none; }
+
+  .form-submit {
+    padding: 0;
+    border-top: none;
+  }
+  .form-submit .btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  /* ── REVIEWS ── */
+  #reviews { background: var(--black); }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: rgba(200,16,46,0.12);
+    margin-bottom: 48px;
+  }
+
+  .review-card {
+    background: var(--black);
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: background 0.3s;
+  }
+  .review-card:hover { background: var(--dark2); }
+
+  .review-stars { display: flex; gap: 3px; }
+  .review-stars span { color: var(--gold); font-size: 14px; }
+
+  .review-text {
+    font-family: var(--font-body);
+    font-size: 17px;
+    font-style: italic;
+    color: var(--light);
+    line-height: 1.75;
+    flex: 1;
+  }
+  .review-text::before { content: '\201C'; color: var(--red); font-size: 28px; line-height: 0; vertical-align: -10px; margin-right: 4px; }
+  .review-text::after  { content: '\201D'; color: var(--red); font-size: 28px; line-height: 0; vertical-align: -10px; margin-left: 4px; }
+
+  .review-author {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray);
+  }
+  .review-author strong {
+    color: var(--gold);
+    display: block;
+    margin-bottom: 2px;
+    font-size: 11px;
+  }
+
+  .review-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 32px;
+    background: var(--dark2);
+    border: 1px solid rgba(200,16,46,0.2);
+  }
+  .review-cta-text {
+    font-family: var(--font-display);
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: var(--white);
+  }
+  .review-cta-sub {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--gray);
+    margin-top: 4px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--dark);
+    border-top: 1px solid rgba(200,16,46,0.2);
+    padding: 40px 0;
+  }
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-logo {
+    font-family: var(--font-display);
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: var(--white);
+  }
+  .footer-logo span { color: var(--red); }
+  .footer-copy {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--gray);
+  }
+  .footer-seo {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #333;
+  }
+
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s, transform 0.7s;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ── HAMBURGER BUTTON ── */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 200;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: all 0.25s;
+    transform-origin: center;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* ── MOBILE MENU OVERLAY ── */
+  .mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.98);
+    border-bottom: 1px solid rgba(200,16,46,0.3);
+    padding: 70px 32px 28px;
+    z-index: 150;
+    flex-direction: column;
+    gap: 0;
+  }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav a {
+    font-family: var(--font-display);
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    transition: color 0.15s;
+  }
+  .mobile-nav a:last-child { border-bottom: none; }
+  .mobile-nav a:hover { color: var(--red); }
+
+  /* ── MOBILE ── */
+  @media (max-width: 768px) {
+    nav { padding: 16px 24px; }
+    .nav-links { display: none; }
+    .nav-tagline { display: none; }
+    .nav-hamburger { display: flex; }
+
+    #hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 100px 24px 48px; }
+    .hero-right {
+      display: block;
+      height: 340px;
+    }
+
+    .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .principles { grid-template-columns: 1fr; }
+    .services-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .container { padding: 0 24px; }
+    .hero-stats { gap: 28px; }
+    .consultation-banner { flex-direction: column; gap: 20px; align-items: flex-start; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .review-cta { flex-direction: column; gap: 20px; align-items: flex-start; }
+    .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo"></a>
+  <span class="nav-tagline">Serious Training for <em>Serious Results.</em></span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#philosophy">Philosophy</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://hypertrophy.brusovcoach.org" target="_blank" rel="noopener noreferrer">Training Hub</a></li>
+
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about">About</a>
+  <a href="#philosophy">Philosophy</a>
+  <a href="#services">Services</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+  <a href="https://hypertrophy.brusovcoach.org" target="_blank" rel="noopener noreferrer">Training Hub</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Strength Coach · St. Louis, MO</p>
+    <h1 class="hero-name">
+      Vladimir
+      <span class="last">Brusov</span>
+    </h1>
+    <p class="hero-tagline">Old School. Real Intensity. Real Results.</p>
+    <!-- tagline kept, philosophy rewritten below -->
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">20</div>
+        <div class="stat-label">Years Coaching</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">26</div>
+        <div class="stat-label">Years Under the Bar</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Continents</div>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Free Consultation</a>
+      <a href="#services" class="btn btn-outline">View Services</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="hero.jpg" alt="Vladimir Brusov — Strength Coach competing at powerlifting championship" class="hero-photo">
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <p class="section-label reveal">Background</p>
+    <h2 class="section-title reveal">Who I Am</h2>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p>I've been training since I was a teenager in Russia. Bodybuilding was always the obsession — studying it, following the best coaches, understanding why things work, not just that they work. That never stopped. I'm still doing it.</p>
+        <p>I went on to get a Master's degree in Physical Education, coached at <strong>Vladimir State University</strong> for over 13 years, and competed in powerlifting at the <strong>European and World level</strong>. I've prepped bodybuilding competitors, coached powerlifters from their first meet to national platforms, helped people pass military fitness tests and SF selections, and worked with complete beginners who had no idea where to start.</p>
+        <p>Six years ago I moved to St. Louis. Same work, different city. My athletes hold <strong>Missouri state records</strong>. I'm an active <strong>regional powerlifting referee</strong> — which means when I prep someone for a meet, I know exactly what the judges are looking for because I am one.</p>
+        <p>I work with everyday people and serious athletes. The goals are different. The approach is different. <strong>The standard isn't.</strong></p>
+      </div>
+      <div class="credentials reveal">
+        <div class="credential-item">
+          <div class="cred-icon"></div>
+          <div class="cred-text"><strong>Bachelor's & Master's — Physical Education</strong>Vladimir State University, Russia — 13+ years as Assistant S&C Coach</div>
+        </div>
+        <div class="credential-item">
+          <div class="cred-icon"></div>
+          <div class="cred-text"><strong>Competitive Powerlifter — European & World Medals</strong>Competed at European and World Championships — knows what the platform demands firsthand</div>
+        </div>
+        <div class="credential-item">
+          <div class="cred-icon"></div>
+          <div class="cred-text"><strong>Missouri State Record Holders</strong>My athletes hold Missouri state records in powerlifting</div>
+        </div>
+        <div class="credential-item">
+          <div class="cred-icon"></div>
+          <div class="cred-text"><strong>Regional Powerlifting Referee</strong>Certified referee — knows the rules, the standards, and what judges look for on meet day</div>
+        </div>
+        <div class="credential-item">
+          <div class="cred-icon"></div>
+          <div class="cred-text"><strong>USAW Level 1 Sports Performance Coach</strong>Military & SF selection prep — helped athletes pass demanding physical standards</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy">
+  <div class="container">
+    <p class="section-label reveal">How I Coach</p>
+    <h2 class="section-title reveal">The Method</h2>
+    <p class="philosophy-intro reveal">I've spent my entire life studying bodybuilding and strength — learning from the best coaches in Russia and the best coaches in America. That combination of knowledge doesn't exist anywhere else. And it applies the same way whether I'm coaching someone who has never lifted or an athlete who has been competing for years.</p>
+    <div class="principles reveal">
+      <div class="principle">
+        <div class="principle-num">01</div>
+        <div class="principle-title">Data First</div>
+        <div class="principle-body">Every program starts with where you actually are — not where you think you are. Numbers don't lie. We test, we baseline, we build from truth.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">02</div>
+        <div class="principle-title">Progressive Load</div>
+        <div class="principle-body">The body adapts to stress that increases systematically over time. Not randomly. Not intuitively. By design — drawing on the best of both Russian sports science and American bodybuilding.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">03</div>
+        <div class="principle-title">No Shortcuts</div>
+        <div class="principle-body">Real strength takes time. I don't overpromise. I don't follow trends. I build athletes who are still stronger five years from now than they are today.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">04</div>
+        <div class="principle-title">Individual Focus</div>
+        <div class="principle-body">I've coached beginners and national competitors. The method scales — but the program is always yours. Your leverages, your recovery, your life outside the gym.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">05</div>
+        <div class="principle-title">Meet Ready</div>
+        <div class="principle-body">Whether your platform is a powerlifting meet, a military selection, or just your daily life — I prepare you to perform when it counts, not just in training.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">06</div>
+        <div class="principle-title">Direct Feedback</div>
+        <div class="principle-body">I tell you what you need to hear, not what you want to hear. If your form is wrong, I say so. If you need to deload, I say so. No sugarcoating.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <p class="section-label reveal">Work With Me</p>
+    <h2 class="section-title reveal">Services</h2>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-type">In-Person · St. Louis, MO</div>
+        <div class="service-title">1-on-1 Training</div>
+        <div class="service-body">Train directly with me in St. Louis. Whether you've never touched a barbell or you're stepping onto a national platform — every session is hands-on, every program is built for you specifically. No two clients train the same way.</div>
+        <ul class="service-includes">
+          <li>Full movement and strength assessment</li>
+          <li>100% custom program for your body and goals</li>
+          <li>Real-time coaching, cues, and corrections</li>
+          <li>Meet prep — coached by an active regional referee</li>
+          <li>Nutrition guidance included</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-type">Remote · Worldwide</div>
+        <div class="service-title">Online Coaching</div>
+        <div class="service-body">The same fully custom approach, delivered remotely. Everyday people and high-level athletes — same attention, same standard. You get a program written specifically for you, direct access to me, and ongoing adjustments as you progress.</div>
+        <ul class="service-includes">
+          <li>Fully custom weekly programming</li>
+          <li>Video form review and detailed feedback</li>
+          <li>Weekly check-ins and adjustments</li>
+          <li>Powerlifting meet prep — coached by an active regional referee</li>
+          <li>Military / Special Forces selection prep</li>
+        </ul>
+      </div>
+    </div>
+    <div class="consultation-banner reveal">
+      <div>
+        <div class="consultation-text">First Consultation Is Free</div>
+        <div class="consultation-sub">No commitment. No sales pitch. Just an honest conversation about your goals.</div>
+      </div>
+      <a href="#contact" class="btn btn-white">Book Your Call</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <p class="section-label reveal">What Clients Say</p>
+    <h2 class="section-title reveal">Results Speak</h2>
+    <div class="reviews-grid reveal">
+
+      <div class="review-card">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="review-text">My trainer Vlad continues to push me without being unrealistic or overbearing. The 3-month check-ins with in-body scans are great for tracking goals and accountability.</p>
+        <div class="review-author">Google Review · The Lab Gym</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="review-text">I wanted a trainer to push me, correct form errors, and get me over a plateau — and Vladimir Brusov is kicking my butt. As someone who's been in the gym for years, I've never sweat this hard. As I'm wrapping up week 2, we are already seeing gains. Great trainer, very knowledgeable, and very friendly.</p>
+        <div class="review-author">Google Review · The Lab Gym</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="review-text">Well-equipped especially for powerlifting and oly lifting. The training staff is elite. If you want to compete or just get a better handle on your fitness, this is the place. Special shout out to Vlad — helped me add two inches to my legs in two months.</p>
+        <div class="review-author">Google Review · The Lab Gym</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="review-text">The LAB rocks. Great people. Great equipment. Great culture. Highly recommend checking it out — they are super nice and will walk you through getting started. P.S. Vlad is the man!</p>
+        <div class="review-author">Google Review · The Lab Gym</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="review-text">6-month update: I'm up 7lbs of muscle and down 3% body fat. I'm now using weights that I had not even considered as my working weights on the daily.</p>
+        <div class="review-author">Google Review · The Lab Gym</div>
+      </div>
+
+    </div>
+    <div class="review-cta reveal">
+      <div>
+        <div class="review-cta-text">Worked With Me? Leave a Review.</div>
+        <div class="review-cta-sub">Takes 30 seconds — helps more than you know.</div>
+      </div>
+      <a href="[YOUR-GOOGLE-REVIEW-LINK]" target="_blank" rel="noopener" class="btn btn-primary">Leave a Google Review</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label reveal">Get In Touch</p>
+    <h2 class="section-title reveal">Start Here</h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="location-tag">
+          <div class="dot"></div>
+          <span>St. Louis, MO — In-Person & Online</span>
+        </div>
+        <p class="contact-intro">Ready to get serious about strength? Fill out the form or email me directly. I'll get back to you within 24 hours to schedule a free consultation.</p>
+        <div class="contact-detail">
+          <div class="contact-item">
+            <span class="contact-item-label">Phone</span>
+            <span class="contact-item-value"><a href="tel:+13145271067">(314) 527-1067</a></span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-label">Email</span>
+            <span class="contact-item-value"><a href="mailto:vladimirbrusov83@gmail.com">vladimirbrusov83@gmail.com</a></span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-label">Location</span>
+            <span class="contact-item-value">The Lab Gym · 3738 Chouteau Ave, St. Louis, MO</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-label">Hours</span>
+            <span class="contact-item-value">Mon – Fri · 9:00 AM – 5:00 PM</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-label">Remote</span>
+            <span class="contact-item-value">Available worldwide — online coaching</span>
+          </div>
+        </div>
+        <a href="mailto:vladimirbrusov83@gmail.com" class="btn btn-primary">Email Me Directly</a>
+      </div>
+      <div class="reveal">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" id="name" name="name" placeholder=" " required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-field">
+              <input type="email" id="email" name="email" placeholder=" " required>
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="form-field full">
+            <select id="goal" name="goal">
+              <option value="" disabled selected></option>
+              <option value="powerlifting">Powerlifting / Meet Prep</option>
+              <option value="bodybuilding">Bodybuilding / Physique</option>
+              <option value="military">Military / SF Selection Prep</option>
+              <option value="general">General Strength & Conditioning</option>
+              <option value="beginner">Beginner — Starting From Scratch</option>
+            </select>
+            <label for="goal">Training Goal</label>
+          </div>
+          <div class="form-field full">
+            <select id="format" name="format">
+              <option value="" disabled selected></option>
+              <option value="inperson">In-Person (St. Louis)</option>
+              <option value="online">Online Coaching</option>
+              <option value="unsure">Not Sure Yet</option>
+            </select>
+            <label for="format">In-Person or Online?</label>
+          </div>
+          <div class="form-field full">
+            <textarea id="message" name="message" rows="4" placeholder=" "></textarea>
+            <label for="message">Tell me about your background and goals</label>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Send Message →</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">BRUSOV<span>.</span></div>
+    <div class="footer-copy">© 2026 Vladimir Brusov · Strength Coach · St. Louis, MO</div>
+  </div>
+</footer>
+
+<script>
+  // Always start at top on refresh
+  history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
+
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+  });
+  function closeMenu() {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+  document.addEventListener('click', (e) => {
+    if (mobileNav.classList.contains('open') &&
+        !mobileNav.contains(e.target) &&
+        !hamburger.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Nav scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Form submit
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type="submit"]');
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const goal = document.getElementById('goal').value;
+    const format = document.getElementById('format').value;
+    const message = document.getElementById('message').value;
+    const subject = encodeURIComponent('Coaching Inquiry — ' + name);
+    const body = encodeURIComponent(
+      'Name: ' + name + '\n' +
+      'Email: ' + email + '\n' +
+      'Goal: ' + goal + '\n' +
+      'Format: ' + format + '\n\n' +
+      'Message:\n' + message
+    );
+    window.location.href = 'mailto:vladimirbrusov83@gmail.com?subject=' + subject + '&body=' + body;
+    btn.textContent = 'Opening email client...';
+    setTimeout(() => { btn.textContent = 'Send Message →'; }, 3000);
+  }
+</script>
+</body>
+</html>
